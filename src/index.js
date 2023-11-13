@@ -1,8 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Header from './templates/_header';
+import Footer from './templates/_footer';
+import Hero from './view/hero';
+import Featured from './view/featured';
+import How from './view/how';
+import Meal from './view/meal';
+import Testimonials from './view/testimonials';
+import Pricing from './view/pricing';
+import Action from './view/action';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './queries.css';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Hero />
+      <Featured />
+      <How />
+      <Meal />
+      <Testimonials />
+      <Pricing />
+      <Action />
+      <Footer />
+    </div>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,8 +34,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
