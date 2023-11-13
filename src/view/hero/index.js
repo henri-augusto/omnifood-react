@@ -46,12 +46,12 @@ export default function Hero() {
             </a>
             <div className="delivered-meals">
               <div className="delivered-imgs">
-                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-1.jpg" alt="Customer" />
+                <img src="img/customers/customer-2.jpg" alt="Customer" />
+                <img src="img/customers/customer-3.jpg" alt="Customer" />
+                <img src="img/customers/customer-4.jpg" alt="Customer" />
+                <img src="img/customers/customer-5.jpg" alt="Customer" />
+                <img src="img/customers/customer-6.jpg" alt="Customer" />
               </div>
               <p className="delivered-text">
                 <span>250,000+</span> meals last year!
@@ -60,7 +60,7 @@ export default function Hero() {
           </div>
           <div className="hero-img-box">
             <img
-              src="img/hero.png"
+              src="img/hero.webp"
               alt="Woman enjoying food, meals in storage"
               className="hero-img"
             />
