@@ -1,33 +1,34 @@
 import React from 'react';
 import './index.css';
 
-export default function Hero() {
-  // const sectionHero = useRef(null);
-  // console.log(sectionHero);
+function Hero() {
+  function sticky() {
+    const sectionHero = document.querySelector('.section-hero');
 
-  // const obs = new IntersectionObserver(
-  //   function (entries) {
-  //     const ent = entries[0];
+    const obs = new IntersectionObserver(
+      function (entries) {
+        const ent = entries[0];
+        console.log(ent);
+        if (!ent.isIntersecting) {
+          document.body.classList.add('sticky');
+        }
 
-  //     if (!ent.isIntersecting) {
-  //       document.body.classList.add('sticky');
-  //     }
-
-  //     if (ent.isIntersecting) {
-  //       document.body.classList.remove('sticky');
-  //     }
-  //   },
-  //   {
-  //     root: null,
-  //     threshold: 0,
-  //     rootMargin: '-80px',
-  //   }
-  // );
-  // obs.observe(sectionHero);
+        if (ent.isIntersecting) {
+          document.body.classList.remove('sticky');
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: '-80px',
+      }
+    );
+    obs.observe(sectionHero);
+  }
 
   return (
     <>
-      <section className="section-hero">
+      <section className="section-hero" onLoad={() => sticky()}>
         <div className="hero">
           <div className="hero-text-box">
             <h1 className="heading-primary">
@@ -70,3 +71,5 @@ export default function Hero() {
     </>
   );
 }
+
+export default Hero;

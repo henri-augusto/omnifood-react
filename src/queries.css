@@ -98,6 +98,7 @@ Instead, 1rem = 1em = 16px */
         pointer-events: auto;
         visibility: visible;
         transform: translateX(0);
+        position: fixed;
     }
 
     .nav-open #icon-mobile-nav[name='close-outline'] {
@@ -179,9 +180,10 @@ Instead, 1rem = 1em = 16px */
 @media (max-width: 44em) {
 
     /*  7px / 16px */
-    /* html {
+    html {
         font-size: 44%;
-    } */
+    }
+
     .grid--3-cols,
     .grid--4-cols {
         grid-template-columns: repeat(2, 1fr);

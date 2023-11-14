@@ -32,7 +32,7 @@ export default function Footer() {
               </li>
             </ul>
             <p className="copyright">
-              Copyright ©{' '}
+              Copyright ©
               <span className="year">{new Date().getFullYear()}</span> by
               Omnifood, Inc. All rights reserved.
             </p>
@@ -64,7 +64,7 @@ export default function Footer() {
               </li>
               <li>
                 <a className="footer-link" href="#">
-                  Sign in{' '}
+                  Sign in
                 </a>
               </li>
               <li>

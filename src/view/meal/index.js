@@ -33,14 +33,12 @@ export default function Meal() {
                 <li className="meal-attribute">
                   <ion-icon className="meal-icon" name="restaurant-outline" />
                   <span>
-                    {' '}
                     NutriScore® <strong>74</strong>
                   </span>
                 </li>
                 <li className="meal-attribute">
                   <ion-icon className="meal-icon" name="star-outline" />
                   <span>
-                    {' '}
                     <strong>4.9</strong> rating (537)
                   </span>
                 </li>
@@ -69,14 +67,12 @@ export default function Meal() {
                 <li className="meal-attribute">
                   <ion-icon className="meal-icon" name="restaurant-outline" />
                   <span>
-                    {' '}
                     NutriScore® <strong>92</strong>
                   </span>
                 </li>
                 <li className="meal-attribute">
                   <ion-icon className="meal-icon" name="star-outline" />
                   <span>
-                    {' '}
                     <strong>4.8</strong> rating (441)
                   </span>
                 </li>
