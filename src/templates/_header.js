@@ -2,8 +2,6 @@ import React from 'react';
 import './_header.css';
 
 export default function Header() {
-  // const [show, setShow] = useState(false);
-
   function link() {
     document.querySelector('.header').classList.toggle('nav-open');
   }
@@ -28,11 +26,11 @@ export default function Header() {
           </a>
           <nav className="main-nav">
             <ul className="main-nav-list">
-              <LiConteiner name={'How it works'} reference={'#how'} />
-              <LiConteiner name={'Meals'} reference={'#meals'} />
-              <LiConteiner name={'Testimonials'} reference={'#testimonials'} />
-              <LiConteiner name={'Pricing'} reference={'#pricing'} />
-              <LiConteiner name={'Try for free'} reference={'#cta'} />
+              <LiContainer name={'How it works'} reference={'#how'} />
+              <LiContainer name={'Meals'} reference={'#meals'} />
+              <LiContainer name={'Testimonials'} reference={'#testimonials'} />
+              <LiContainer name={'Pricing'} reference={'#pricing'} />
+              <LiContainer name={'Try for free'} reference={'#cta'} />
               <li>
                 <a
                   className="main-nav-link nav-cta"
@@ -53,7 +51,7 @@ export default function Header() {
     </>
   );
 
-  function LiConteiner({ reference, name }) {
+  function LiContainer({ reference, name }) {
     return (
       <>
         <li>
