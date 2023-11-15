@@ -30,7 +30,6 @@ export default function Header() {
               <LiContainer name={'Meals'} reference={'#meals'} />
               <LiContainer name={'Testimonials'} reference={'#testimonials'} />
               <LiContainer name={'Pricing'} reference={'#pricing'} />
-              <LiContainer name={'Try for free'} reference={'#cta'} />
               <li>
                 <a
                   className="main-nav-link nav-cta"
